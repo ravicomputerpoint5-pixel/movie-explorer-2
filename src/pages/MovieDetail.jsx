@@ -6,7 +6,7 @@ export default function MovieDetail(){
     const [movie, setMovie] = useState([])
 
     async function getDetail(){
-        const res = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=5df9cf9a`)
+        const res = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=5df9cf9a`)
         const data = await res.json()
         setMovie(data)
     }

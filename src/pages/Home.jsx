@@ -7,7 +7,7 @@ export default function Home(){
     const [name, setName] = useState('')
 
     async function getMovies(query){
-        const res = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=5df9cf9a`)
+        const res = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=5df9cf9a`)
         const data = await res.json()
         setMovies(data.Search)
     }
